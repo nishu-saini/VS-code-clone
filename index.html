@@ -32,9 +32,9 @@
                 </ul>
             </div>
             <div class="flex items-center h-[100%]">
-                <div class="bg-[#3D3D42] h-[100%] flex items-center hover:border-solid hover:border-2 hover:border-slate-400">
+                <div class="bg-[#3D3D42] h-[100%] flex items-center border-solid border-2 border-[#3D3D42] hover:border-slate-400">
                     <a href="#search"><img src="./images/search.svg" class="w-4 mx-[8px]" alt="Search"></a>
-                    <input class="bg-[#3D3D42] h-[100%]" id="search" type="text" placeholder="Search Docs">
+                    <input class="bg-[#3D3D42] h-[100%] focus:outline-none" id="search" type="text" placeholder="Search Docs">
                 </div>
                 <div class="bg-[#0066B8] flex items-center gap-x-[15px] h-[100%] px-[20px] hover:bg-blue-800">
                     <img src="./images/item-install-tile-inverted.png" alt="Download" class="w-4 h-4">
@@ -65,16 +65,17 @@
                         </button>
                         <span class="px-[15px] text-[30px] border-l-[2px] border-[#2C2C32] h-[100%] hover:bg-blue-700">&#x2304;</span>
                     </div>
-                    <div>
+                    <div class="bg-[#25252B] mt-[15px] px-[15px] py-[8px] font-[300] text-[15px] rounded-lg">
                         <p>
-                            <span>Web,</span>
-                            <span> Insider edition</span>, or
-                            <span> other platforms</span>
+                            <span class="text-[#0798FF] hover:underline"><a href="#">Web</a></span>, 
+                            <span class="text-[#0798FF] hover:underline"><a href="#">Insider edition</a></span>, 
+                            <span class="text-white">or </span>
+                            <span class="text-[#0798FF] hover:underline"><a href="#">other platforms</a></span>
                         </p>
                     </div>
-                    <div>
+                    <div class="text-center mt-[15px] font-[300] text-[13px]">
                         <p>By using VS Code, you agree to its</p>
-                        <p>License and Privacy statement</p>
+                        <a href="#" class="text-[#0798FF] hover:underline">License and Privacy statement</a>
                     </div> 
                 </div>
     
@@ -85,53 +86,55 @@
         </div>
 
         <!-- Icon Bar -->
-        <div>
-            <div>
-                <i></i>
+        <div class="flex ml-[7%] mr-[6%] items-center gap-x-[30px] text-[18px] text-[#4A444A]">
+            <div class="w-[25%] flex flex-col items-center py-[15px] hover:text-[#000000] hover:bg-slate-200">
+                <i class="fa fa-solid fa-lightbulb text-[50px] mb-[10px]"></i>
                 <p>IntelliSense</p>
             </div>
-            <div>
-                <i></i>
+            <div class="w-[25%] text-center flex flex-col items-center py-[15px] hover:text-[#000000] hover:bg-slate-200">
+                <i class="fa fa-solid fa-play text-[50px] mb-[10px]"></i>
                 <p>Run and Debug</p>
             </div>
-            <div>
-                <i></i>
+            <div class="w-[25%] text-center flex flex-col items-center py-[15px] hover:text-[#000000] hover:bg-slate-200">
+                <i class="fa fa-solid fa-code-branch text-[50px] mb-[10px]"></i>
                 <p>Built-in Git</p>
             </div>
-            <div>
-                <i></i>
+            <div class="w-[25%] text-center flex flex-col items-center py-[15px] hover:text-[#000000] hover:bg-slate-200">
+                <i class="fa fa-solid fa-coins text-[50px] mb-[10px]"></i>
                 <p>Extensions</p>
             </div>
         </div>
 
         <!-- Comments Section -->
-        <div>
-            <div>
-                <img src="" alt="less than arrow">
-            </div>
-            <div>
-                <img src="" alt="user">
+        <div class="bg-[#F5F5F5]">
+            <div class="flex ml-[7%] mr-[6%] py-[100px] gap-x-3 items-center justify-between">
                 <div>
-                    <h3>User Name</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut ex consectetur fugiat quisquam quod ipsam, doloribus assumenda!</p>
+                    <img src="./images/left-arrow.png" class="w-[15vh]" alt="left-arrow">
                 </div>
-            </div>
-            <div>
-                <img src="" alt="user">
+                <div class="flex gap-x-3">
+                    <img src="./images/cassidoo.jpg" class="w-20 h-20 rounded-full" alt="user">
+                    <div>
+                        <h3 class="font-bold hover:text-blue-600">Cassidoo <span class="font-[400] text-[#8E8E8E] text-[14px]">&#64;cassido34</span></h3>
+                        <p class="text-[#777777] text-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut ex consectetur fugiat quisquam quod ipsam, doloribus assumenda!</p>
+                    </div>
+                </div>
+                <div class="flex gap-x-3">
+                    <img src="./images/jadbox.jpg" class="w-20 h-20 rounded-full" alt="user">
+                    <div>
+                        <h3 class="font-bold hover:text-blue-600">Jadbox <span class="font-[400] text-[14px] text-[#8E8E8E]">&#64;jadbox23</span></h3>
+                        <p class="text-[#777777] text-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut ex consectetur fugiat quisquam quod ipsam, doloribus assumenda!</p>
+                    </div>
+                </div>
+                <div class="flex gap-x-3">
+                    <img src="./images/lauragift21.jpg" class="w-20 h-20 rounded-full" alt="user">
+                    <div>
+                        <h3 class="font-bold hover:text-blue-600">Lauragift <span class="font-[400] text-[14px] text-[#8E8E8E]">&#64;lauragift21</span></h3>
+                        <p class="text-[#777777] text-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut ex consectetur fugiat quisquam quod ipsam, doloribus assumenda!</p>
+                    </div>
+                </div>
                 <div>
-                    <h3>User Name</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut ex consectetur fugiat quisquam quod ipsam, doloribus assumenda!</p>
+                    <img src="./images/right-arrow.png" class="w-[15vh]" alt="right-arrow">
                 </div>
-            </div>
-            <div>
-                <img src="" alt="user">
-                <div>
-                    <h3>User Name</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut ex consectetur fugiat quisquam quod ipsam, doloribus assumenda!</p>
-                </div>
-            </div>
-            <div>
-                <img src="" alt="Greater than arrow">
             </div>
 
         </div>
